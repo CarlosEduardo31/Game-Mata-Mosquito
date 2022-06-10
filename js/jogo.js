@@ -2,9 +2,20 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 3
+var tempo = 15
+var contMosquito = 0
 
-
+//Pegar o nível selecionado na pagina inicial
+var criaMosquitoTempo = 1500
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+if(nivel === 'normal') {
+	criaMosquitoTempo = 1500
+	}else if(nivel === 'dificil'){
+		criaMosquitoTempo = 1000
+		}else if(nivel === 'chucknorris'){
+			criaMosquitoTempo = 750
+		}
 //Pega a altura e a largura da tela do navegador
 function ajustaTamanhoPalcoJogo() {
 	altura = window.innerHeight
@@ -63,7 +74,9 @@ function posicaoRandomica() {
 	mosquito.style.position = 'absolute'
     mosquito.id = 'mosquito'
     mosquito.onclick = function (){
-        this.remove()
+		this.remove()
+		contMosquito++
+		document.getElementById('contador').innerHTML = contMosquito
     }
 
 	document.body.appendChild(mosquito)
