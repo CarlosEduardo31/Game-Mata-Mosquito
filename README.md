@@ -2,5 +2,6 @@
 
 https://carloseduardo31.github.io/Game-Mata-Mosquito/
 
-[game-mata-mosquito](https://user-images.githubusercontent.com/53567018/173069705-f966688b-2ef3-4dad-b1d2-9bcba9498f2d.png)
+![image](https://user-images.githubusercontent.com/53567018/173082388-a9f4c1bf-3a16-40e2-bd9b-8d613974de6b.png)
+
 
